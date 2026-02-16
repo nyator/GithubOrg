@@ -19,7 +19,7 @@ function App() {
 
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 9
+  const itemsPerPage = 10;
 
 
   // Compute filtered data
@@ -106,7 +106,8 @@ function App() {
         />
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3'>
+      {/* <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3'> */}
+      <div className='flex flex-wrap gap-4 mt-3ß'>
         {isLoading && (<Loader />)}
 
         {error && (<Error error={error.message} />)}
@@ -123,7 +124,6 @@ function App() {
           onNext={handleNextPage}
           onPrev={handlePrevPage}
         />
-
         : null}
 
     </div>

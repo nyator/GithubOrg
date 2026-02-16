@@ -14,7 +14,9 @@ function Header({ query, setQuery }) {
     })
 
     const onSubmit = (data) => {
-        setQuery(data.query)
+        setQuery(data.query.trim().toLowerCase());
+        setCurrentPage(1) // Reset to first page on new search
+        // console.log(query)
     }
 
     return (

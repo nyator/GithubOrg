@@ -1,7 +1,7 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 
-const FilterButton = ({ icon, name, options, selected, onSelect, open, setOpen }) => {
+const FilterButton = ({ icon, options, selected, onSelect, open, setOpen }) => {
     return (
         <>
             <div className="relative">
