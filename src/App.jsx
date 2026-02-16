@@ -93,7 +93,7 @@ function App() {
     <div className='flex flex-col items-start justify-center space-y-8 ml-6'>
 
       <div className='flex gap-4 mb-4 items-end'>
-        <Header query={query} setQuery={setQuery} />
+        <Header query={query} setQuery={setQuery} setCurrentPage={setCurrentPage} />
         <Filter
           timeFilter={timeFilter}
           setTimeFilter={setTimeFilter}
